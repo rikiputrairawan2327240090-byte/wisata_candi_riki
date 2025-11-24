@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:wisata_candi_riki/models/candi.dart';
+
+import '../models/candi.dart';
 
 class DetailScreen extends StatelessWidget {
   final Candi candi;
@@ -13,7 +14,7 @@ class DetailScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            // Detail Header
+            // 🔹 Detail Header
             Stack(
               children: [
                 // Gambar utama
@@ -75,14 +76,14 @@ class DetailScreen extends StatelessWidget {
                     ],
                   ),
 
-                   SizedBox(height: 16),
+                  SizedBox(height: 16),
 
                   // Info tengah (lokasi, dibangun, tipe)
                   Row(
                     children: [
-                       Icon(Icons.place, color: Colors.red),
-                       SizedBox(width: 8),
-                       SizedBox(
+                      Icon(Icons.place, color: Colors.red),
+                      SizedBox(width: 8),
+                      SizedBox(
                         width: 70,
                         child: Text(
                           'Lokasi',
@@ -94,9 +95,9 @@ class DetailScreen extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                       Icon(Icons.calendar_month, color: Colors.blue),
-                       SizedBox(width: 8),
-                       SizedBox(
+                      Icon(Icons.calendar_month, color: Colors.blue),
+                      SizedBox(width: 8),
+                      SizedBox(
                         width: 70,
                         child: Text(
                           'Dibangun',
@@ -108,9 +109,9 @@ class DetailScreen extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                       Icon(Icons.house, color: Colors.green),
-                       SizedBox(width: 8),
-                       SizedBox(
+                      Icon(Icons.house, color: Colors.green),
+                      SizedBox(width: 8),
+                      SizedBox(
                         width: 70,
                         child: Text(
                           'Tipe',
@@ -120,7 +121,7 @@ class DetailScreen extends StatelessWidget {
                       Text(': ${candi.type}'),
                     ],
                   ),
-                   SizedBox(height: 16),
+                  SizedBox(height: 16),
                   Divider(color: Colors.deepPurple.shade100),
                   SizedBox(height: 16),
                   // Info bawah (deskripsi)
@@ -156,14 +157,14 @@ class DetailScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Divider(color: Colors.deepPurple.shade100),
-                   Text(
+                  Text(
                     'Galeri',
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                   SizedBox(height: 10),
+                  SizedBox(height: 10),
                   SizedBox(
                     height: 100,
                     child: ListView.builder(
@@ -203,8 +204,8 @@ class DetailScreen extends StatelessWidget {
                       },
                     ),
                   ),
-                   SizedBox(height: 4),
-                   Text(
+                  SizedBox(height: 4),
+                  Text(
                     'Tap untuk memperbesar',
                     style: TextStyle(
                       fontSize: 12,
